@@ -29,6 +29,7 @@
     "@angular/router": "~11.0.0",
     "@nativescript/angular": "~11.0.0",
     "@nativescript/core": "~7.0.0",
+    "@nativescript/schematics": "^11.0.0",
     "@nativescript/theme": "~3.0.0",
     "core-js": "^3.8.0",
     "electron": "^11.1.1",
