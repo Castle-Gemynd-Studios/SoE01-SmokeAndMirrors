@@ -1,7 +1,11 @@
 {
-  "name": "SoE01-SmokeAndMirrors",
-  "main": "main.tns.js",
+  "name": "soe01-smokeandmirrors",
+  "description": "In this fantasy text-adventure title, explore the mysterious mainland of the continent Pan Alga, craft new spells, uncover secrets of the land's past, and reveal truths surrounding an age-old danger in a race against powerful forces.",
   "version": "0.0.0",
+  "author": "Gabriel Hanna",
+  "license": "MPL-2.0",
+  "private": true,
+  "main": "main.tns.js",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -14,7 +18,6 @@
     "mobile": "tns run",
     "preview": "tns preview"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "~11.0.0",
     "@angular/common": "~11.0.0",
@@ -25,9 +28,10 @@
     "@angular/platform-browser-dynamic": "~11.0.0",
     "@angular/router": "~11.0.0",
     "@nativescript/angular": "~11.0.0",
-    "core-js": "^3.8.0",
     "@nativescript/core": "~7.0.0",
     "@nativescript/theme": "~3.0.0",
+    "core-js": "^3.8.0",
+    "electron": "^11.1.1",
     "reflect-metadata": "~0.1.12",
     "rxjs": "~6.6.0",
     "tslib": "~2.0.0",
