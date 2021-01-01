@@ -17,8 +17,8 @@
     "ios": "tns run ios --no-hmr",
     "mobile": "tns run",
     "preview": "tns preview",
-    "start:electron": "electron ./dist/electron/main.js",
-    "build:electron": "ng build && npm run electron ./dist/electron/main.js"
+    "start:electron": "ng build && tsc --p ./electron && electron ./dist/electron/main.js",
+    "build:electron": "ng build && tsc --p ./electron"
   },
   "dependencies": {
     "@angular/animations": "~11.0.0",
