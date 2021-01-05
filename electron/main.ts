@@ -1,5 +1,5 @@
 import {app, BrowserWindow} from 'electron';
-//import * as url from 'url';
+import * as url from 'url';
 import * as path from 'path';
 import * as process from 'process';
 
@@ -14,7 +14,7 @@ function createWindow () {
 		}
 	});
 
-	mainWindow.loadURL(path.join(__dirname, `../web/index.html`));
+	mainWindow.loadURL(url.format(path.join(__dirname, 'index.html')));
 
 	// Open the DevTools.
 	mainWindow.webContents.openDevTools();

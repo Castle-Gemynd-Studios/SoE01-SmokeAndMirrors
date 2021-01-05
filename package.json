@@ -8,8 +8,8 @@
   "main": "main.tns.js",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "ng build && tsc --p ./electron && electron ./dist/electron/main.js",
+    "build": "ng build && tsc --p ./electron",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
@@ -17,8 +17,8 @@
     "ios": "tns run ios --no-hmr",
     "mobile": "tns run",
     "preview": "tns preview",
-    "start:electron": "ng build && tsc --p ./electron && electron ./dist/electron/main.js",
-    "build:electron": "ng build && tsc --p ./electron"
+    "start:ng": "ng serve",
+    "build:ng": "ng build"
   },
   "dependencies": {
     "@angular/animations": "~11.0.0",

@@ -4,12 +4,17 @@ import { HomeComponent } from '@src/app/view/home/home.component';
 
 export const routes: Routes = [
   {
-      path: '',
-      redirectTo: '/home',
-      pathMatch: 'full',
+    path: '',
+    redirectTo: '/index.html',
+    pathMatch: 'full'
   },
   {
-      path: 'home',
-      component: HomeComponent,
+    path: 'home',
+    redirectTo: '/index.html',
+    pathMatch: 'full'
   },
+  {
+    path: 'index.html',
+    component: HomeComponent
+  }
 ];
