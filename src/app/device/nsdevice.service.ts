@@ -1,14 +1,10 @@
 import { Injectable } from '@angular/core';
 
-import { DeviceModule } from "@src/app/device/device.module";
-
 import { DeviceService } from './device.service';
 
 import { Device, isIOS, isAndroid } from '@nativescript/core/platform';
 
-@Injectable({
-  providedIn: DeviceModule
-})
+@Injectable()
 export class NSDeviceService extends DeviceService {
   public get os(): string {
     return `${Device.os}`;

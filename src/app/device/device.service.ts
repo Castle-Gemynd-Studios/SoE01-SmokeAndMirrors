@@ -1,8 +1,6 @@
 import { Injectable } from '@angular/core';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export abstract class DeviceService {
 
   public abstract get os(): string;
@@ -18,7 +16,5 @@ export abstract class DeviceService {
   public abstract get isLinux(): boolean;
 
   constructor() { }
-
-
 
 }

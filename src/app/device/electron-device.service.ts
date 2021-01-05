@@ -3,9 +3,7 @@ import { Injectable } from '@angular/core';
 import { RendererCoreService } from '../my-electron/renderer-core.service';
 import { DeviceService } from './device.service';
 
-@Injectable({
-  providedIn: 'any'
-})
+@Injectable()
 export class ElectronDeviceService extends DeviceService {
   public get os(): string {
     return "win32";

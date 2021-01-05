@@ -9,8 +9,6 @@ import { DeviceModule } from "@src/app/device/device.module";
 import { AppComponent } from '@src/app/app.component';
 import { HomeComponent } from '@src/app/view/home/home.component';
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
